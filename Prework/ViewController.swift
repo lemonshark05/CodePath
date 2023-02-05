@@ -46,7 +46,19 @@ class ViewController: UIViewController {
     
     
     @IBAction func changeBackgroundColor(_ sender: UIButton) {
-        
+        var backColor = arc4random() % 5;
+        switch(backColor){
+            case 0:
+                self.view.backgroundColor = UIColor.red;
+            case 1:
+                self.view.backgroundColor = UIColor.gray;
+            case 2:
+                self.view.backgroundColor = UIColor.yellow;
+            case 3:
+                self.view.backgroundColor = UIColor.blue;
+            default:
+                self.view.backgroundColor = UIColor.white;
+        }
     }
     
     override func viewDidLoad() {
