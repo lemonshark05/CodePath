@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var i = 0;
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var schoolNameTextField: UITextField!
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var morePetsSwitch: UISwitch!
     @IBOutlet weak var morePetsStepper: UIStepper!
     @IBOutlet weak var numberOfPetsLabel: UILabel!
+    @IBOutlet weak var logoImage: UIImageView!
     
     @IBAction func stepperDidChange(_ sender: UIStepper) {
           numberOfPetsLabel.text = "\(Int(sender.value))"
@@ -49,21 +51,34 @@ class ViewController: UIViewController {
         var backColor = arc4random() % 5;
         switch(backColor){
             case 0:
-                self.view.backgroundColor = UIColor.red;
+                self.view.backgroundColor = UIColor.red
             case 1:
-                self.view.backgroundColor = UIColor.gray;
+                self.view.backgroundColor = UIColor.gray
             case 2:
-                self.view.backgroundColor = UIColor.yellow;
+                self.view.backgroundColor = UIColor.yellow
             case 3:
-                self.view.backgroundColor = UIColor.blue;
+                self.view.backgroundColor = UIColor.blue
             default:
-                self.view.backgroundColor = UIColor.white;
+                self.view.backgroundColor = UIColor.white
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
+        logoImage.addGestureRecognizer(tapGR)
+        logoImage.isUserInteractionEnabled = true
+    }
+    
+    @objc func imageTapped(sender: UITapGestureRecognizer) {
+        if i==0 {
+            logoImage.image = UIImage(named:"USFG")
+            i = 1
+        } else {
+            logoImage.image = UIImage(named:"USFCA")
+            i = 0
+        }
     }
 }
 

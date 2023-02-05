@@ -126,6 +126,7 @@
                     <connections>
                         <outlet property="firstNameTextField" destination="hlL-d1-3c1" id="ryq-0f-vD5"/>
                         <outlet property="lastNameTextField" destination="dwW-8L-MrZ" id="JT6-pU-x7s"/>
+                        <outlet property="logoImage" destination="z75-6D-dng" id="52i-Fh-nCW"/>
                         <outlet property="morePetsStepper" destination="m4t-I8-BMw" id="1ob-6x-TKr"/>
                         <outlet property="morePetsSwitch" destination="U3D-UM-PlJ" id="OTa-sJ-UEN"/>
                         <outlet property="numberOfPetsLabel" destination="7wr-Fk-Yks" id="4cz-wh-2Zl"/>
