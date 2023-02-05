@@ -27,6 +27,7 @@
 - [ ] 3. User can select on additional buttons that provide more info about the user. Example: more textfields, a different alert box, etc.
 - [ ] 4. Any stylistic changes that are not default options (Comment this here)
 
+https://user-images.githubusercontent.com/100770743/216815981-ff589ca8-92a5-4b35-a00f-887bee6976ca.mp4
 
-https://user-images.githubusercontent.com/100770743/216815758-87b62094-8136-420d-856f-7d1a34016a63.mp4
+
 
